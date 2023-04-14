@@ -5,6 +5,13 @@ let eta = parseInt(prompt (`quanti anni hai?`))
 
 let costoTotale   = (kmPercorsi * 0.21  )
 
+const form = document.getElementById("form");
+form.addEventListener("submit", function(event) {
+    // blocchi il refresh della pagina
+    event.preventDefault();
+    // tutta la logica della generazione del biglietto
+});
+
 if (isNaN(eta) || isNaN(kmPercorsi)  ) {
     alert ("i dati inseriti sono scorretti ricaricare la pagina e riprovare")
 } else if (eta < 18) {
